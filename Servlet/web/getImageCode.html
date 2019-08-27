@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取图片验证码</title>
+</head>
+<script>
+    window.onload=function () {
+        var image = document.getElementById("checkCode");
+        image.onclick=function() {
+          var date=new Date().getTime();
+          image.src="/Servlet_war_exploded?"+date;
+       }
+    }
+</script>
+<body>
+<img id="checkCode" src="/Servlet_war_exploded/checkCodeServlet">
+<a id="change" href="#">看不清？换一张</a>
+</body>
+</html>

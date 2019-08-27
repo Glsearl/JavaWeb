@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定事件</title>
+</head>
+<body>
+<img src="img/on.gif" onclick="fun()">
+<img src="img/off.gif" id="imgBtn" align="center">
+<hr>
+<input type="button" id="btn" value="别动我">
+<script>
+    function fun() {
+        alert("你点我了")
+    }
+    function fun2() {
+        alert("你再点我试试")
+    }
+
+    var element = document.getElementById("imgBtn");
+    element.onclick=function () {
+        alert("别点我")
+    }
+    var btn = document.getElementById("btn");
+    btn.onclick=fun2;
+</script>
+</body>
+</html>

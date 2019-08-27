@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        /*选择所有元素*/
+        /**{*/
+        /*    color: green;*/
+        /*}*/
+        /*并集选择器*/
+        div，p{
+            color: blueviolet;
+        }
+        /*子选择器：p是div的子，所以选择的是P标签*/
+        div2 p{
+            color: blue;
+        }
+        /*父选择器：div是P的父，所以选择的是div*/
+        div1>p{
+            color: burlywood;
+        }
+        /*属性选择器*/
+       h1[class="one title"]{
+           color: brown;
+       }
+        伪类选择器：选择一些元素具有的状态
+        a:link{
+            color: black;
+
+        }
+        a:hover{
+            color: green;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a:visited{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好
+    <p>
+        hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello
+    </p>
+</div>
+<hr width="100%" color="red">
+<div2>
+    你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好
+    <p>
+        hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello
+    </p>
+</div2>
+<hr width="100%" color="red">
+<div1>
+    你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好  你好
+    <p>
+        hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello
+    </p>
+</div1>
+<h1 class="one title">一级标题</h1>
+<a href="#">这是一个链接</a>
+</body>
+</html>

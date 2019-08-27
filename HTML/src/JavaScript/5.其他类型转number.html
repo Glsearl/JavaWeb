@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他类型转number</title>
+    <script>
+        var a=+5;
+        document.write(a+typeof(a)+"<br>")
+        document.write((a+1)+"<br>");
+        // string转number
+        var str=+"123";
+        document.write(str+typeof(str)+"<br>")
+        document.write((str+1)+"<br>")
+        //abc先转成NaN
+        var str1=+"abc";
+        document.write(str1+typeof(str1)+"<br>")
+        document.write((str1+1)+"<br>")
+        //boolean转number    true转为1   false转为0
+        var f1=+true;
+        var f2=+false;
+        document.write(f1+typeof(f1)+"<br>")
+        document.write(f2+typeof(f2)+"<br>")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Function对象</title>
+
+    <script>
+        /**
+         *    1. 方法定义是，形参的类型不用写,返回值类型也不写。
+         2. 方法是一个对象，如果定义名称相同的方法，会覆盖
+         3. 在JS中，方法的调用只与方法的名称有关，和参数列表无关
+         4. 在方法声明中有一个隐藏的内置对象（数组），arguments,封装所有的实际参数
+         */
+        // Function 创建对象方式一
+        // var fun=new Function("a","b","alert(a)");
+        // fun(10,20);
+        // Function 创建对象方式二
+        var fun1=function(a,b){
+          alert(a+b);
+        }
+        // fun1(2,3);
+        // Function 创建对象方式三
+        function fun2(a,b){
+            alert(a);
+            alert(b);
+        }
+       // fun2(10,30);
+        // alert(fun2.length);
+
+        function add() {
+            var sum=0;
+            for (var i = 0; i <arguments.length ; i++) {
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+        var sum=add(1,2,3,4,5);
+        alert(sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

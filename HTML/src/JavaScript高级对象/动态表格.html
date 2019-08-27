@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格</title>
+
+    <style>
+        table{
+            border: 1px solid;
+            margin: auto;
+            width: 500px;
+        }
+
+        td,th{
+            text-align: center;
+            border: 1px solid;
+        }
+        div{
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div>
+    <input type="text" id="id" placeholder="请输入编号">
+    <input type="text" id="name"  placeholder="请输入姓名">
+    <input type="text" id="gender"  placeholder="请输入性别">
+    <input type="button" value="添加" id="btn_add">
+
+</div>
+
+
+<table id="table">
+    <caption>学生信息表</caption>
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>令狐冲</td>
+        <td>男</td>
+        <td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>任我行</td>
+        <td>男</td>
+        <td><a href="javascript:void(0)"onclick="del(this)">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>岳不群</td>
+        <td>?</td>
+        <td><a href="javascript:void(0)"onclick="del(this)">删除</a></td>
+    </tr>
+
+
+</table>
+<script>
+    var add = document.getElementById("btn_add");
+    add.onclick=function () {
+       // // 获取输入框内容分
+       //  var id = document.getElementById("id").value;
+       //  var name = document.getElementById("name").value;
+       //  var gender = document.getElementById("gender").value;
+       //  //获取表格
+       //  var table = document.getElementById("table");
+       //    var tr = document.createElement("tr");
+       //
+       //    var id_td = document.createElement("td");
+       //    var name_td = document.createElement("td");
+       //    var gender_td = document.createElement("td");
+       //      var text_id = document.createTextNode(id);
+       //      id_td.appendChild(text_id);
+       //      tr.appendChild(id_td);
+       //
+       //  var text_name = document.createTextNode(name);
+       //  name_td.appendChild(text_name);
+       //  tr.appendChild(name_td);
+       //
+       //  var text_gender= document.createTextNode(gender);
+       //  gender_td.appendChild(text_gender);
+       //  tr.appendChild(gender_td);
+       //  var td_option = document.createElement("td");
+       //
+       //  var a = document.createElement("a");
+       //  a.setAttribute("href","javascript:void(0);");
+       //  a.setAttribute("onclick","del(this)");
+       //  var text_a = document.createTextNode("删除");
+       //  a.appendChild(text_a);
+       //  td_option.appendChild(a);
+       //  tr.appendChild(td_option);
+       //  table.appendChild(tr);
+
+        //使用innerHTML来添加数据;
+        //  获取输入框内容分
+         var id = document.getElementById("id").value;
+         var name = document.getElementById("name").value;
+         var gender = document.getElementById("gender").value;
+         //获取表格
+         var table = document.getElementById("table");
+
+           table.innerHTML+="<tr>\n" +
+               "        <td>"+id+"</td>\n" +
+               "        <td>"+name+"</td>\n" +
+               "        <td>"+gender+"</td>\n" +
+               "        <td><a href=\"javascript:void(0)\"onclick=\"del(this)\">删除</a></td>\n" +
+               "    </tr>";
+    }
+    function del(obj) {
+      var table = obj.parentNode.parentNode.parentNode;
+      var tr = obj.parentNode.parentNode;
+      table.removeChild(tr);
+    }
+
+
+</script>
+</body>
+</html>

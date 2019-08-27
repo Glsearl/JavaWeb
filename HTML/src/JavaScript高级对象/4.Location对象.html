@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="刷新当前页面" id="refresh">
+<input type="button" value="去百度" id="goBai">
+<script>
+     var refreshBtn = document.getElementById("refresh");
+      refreshBtn.onclick=function () {
+          location.reload();
+      }
+
+      var href = location.href;
+      //alert(href);
+     var goBtn = document.getElementById("goBai");
+     goBtn.onclick=function () {
+         location.href="https://www.baidu.com";
+     }
+</script>
+</body>
+</html>

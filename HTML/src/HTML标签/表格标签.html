@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" width="50%" border="1"bgcolor="aqua" align="center">
+    <tr bgcolor="#faebd7">
+        <td>学号</td>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    <tr bgcolor="#5f9ea0">
+        <td>1</td>
+        <td>张三</td>
+        <td>女</td>
+    </tr>
+    <tr bgcolor="#5f9ea0">
+        <td>2</td>
+        <td>李四</td>
+        <td>男</td>
+    </tr>
+</table>
+<hr color="red">
+<table cellpadding="1" cellspacing="1" width="50%" border="1" align="center">
+    <tr bgcolor="#faebd7">
+<!--        rowspan 合并列单元格-->
+        <td rowspan="2">学号</td>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    <tr bgcolor="#5f9ea0">
+        <td>张三</td>
+        <td>女</td>
+    </tr>
+<!--    colspan 合并行单元格-->
+    <tr bgcolor="#5f9ea0">
+        <td>2</td>
+        <td colspan="2">李四</td>
+        <td>男</td>
+    </tr>
+</table>
+<hr color="red">
+<table cellpadding="1" cellspacing="1" width="50%" border="1" align="center">
+    <thead>
+    <caption>学生信息表</caption>
+    </thead>
+    <tbody>
+    <tr bgcolor="#faebd7">
+        <!--        rowspan 合并列单元格-->
+        <td>学号</td>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    <tr bgcolor="#5f9ea0">
+        <td>1</td>
+        <td>张三</td>
+        <td>女</td>
+    </tr>
+    </tbody>
+    <!--    colspan 合并行单元格-->
+    <tfoot>
+    <tr>
+        <td>2</td>
+        <td>李四</td>
+        <td>男</td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Global对象</title>
+    <script>
+        //1. 特点：全局对象，这个Global中封装的方法不需要对象就可以直接调用。  方法名();
+        var text="守护最好的坤坤";
+        var encode = encodeURI(text);
+        document.write(encode+"<br>");
+        var decode = decodeURI(encode);
+        document.write(decode+"<br>");
+    //encodeURIComponent()编码的字符更多
+        var text2="https://www.baidu.com&wd=守护最好的坤坤";
+        var encode2 = encodeURIComponent(text2);
+        document.write(encode2+"<br>");
+        var decode2 = decodeURIComponent(encode2);
+        document.write(decode2+"<br>");
+
+       /* parseInt():将字符串转为数字
+        * 逐一判断每一个字符是否是数字，直到不是数字为止，将前边数字部分转为number*/
+       var str="123ad0";
+       var number = parseInt(str);
+       document.write(number+"<br>");
+       /* isNaN():判断一个值是否是NaN
+        * NaN六亲不认，连自己都不认。NaN参与的==比较全部问false
+*/
+       var a="a10";
+       document.write(a==NaN);
+       document.write("<br>");
+       document.write(isNaN(a));
+       /* eval():讲 JavaScript 字符串，并把它作为脚本代码来执行。*/
+        var js="alert(\"hello\")";
+        eval(js);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

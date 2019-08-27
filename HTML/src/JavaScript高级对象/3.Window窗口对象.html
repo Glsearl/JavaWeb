@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+</head>
+<body>
+<input type="button" id="openBtn" value="打开百度窗口">
+<input type="button" id="closeBtn" value="关闭百度窗口">
+<script>
+    /*  window.alert("这是一个弹窗");
+      var flag = window.confirm("这是一个带确定按钮的弹窗");
+      if (flag){
+          alert("欢迎您下次再来");
+      } else{
+          alert("取消成功");
+      }
+      var text = window.prompt("这是一个显示用户输入的弹窗");
+      alert(text);*/
+
+    /*var openBtn = document.getElementById("openBtn");
+    var newWindow;
+    openBtn.onclick = function() {
+        newWindow = open("https://www.baidu.com");
+    }
+    var btn2 = document.getElementById("closeBtn");
+    btn2.onclick = function () {
+        newWindow.close();
+    }*/
+    // 定时器
+    var timeout = setTimeout("fun()",3000);
+    clearTimeout(timeout);
+    function fun() {
+        alert("爆炸了。。。")
+    }
+
+    var interval = setInterval("fun2()",2000);
+    function fun2() {
+        alert("一直爆炸。。。。")
+    }
+    clearInterval(interval);
+
+</script>
+</body>
+</html>

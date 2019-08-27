@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding= 'utf-8' ?>
+<?xml-stylesheet type="text/css" href="a.css" ?><!--导入外部CSS，改变XML样式-->
+<!--XML入门-->
+<stundents>
+    <student>
+        <name id="1">张无忌</name>
+        <age>18</age>
+        <gender>man</gender>
+    </student>
+    <student>
+        <name id="2">赵敏</name>
+        <age>16</age>
+        <gender>woman</gender>
+        <!--原样输出数据-->
+        <![CDATA[if(a>0&& a<10){
+        document.write(a)}]]>
+    </student>
+</stundents>

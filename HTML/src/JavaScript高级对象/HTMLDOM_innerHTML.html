@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTMLDOM_innerHTML</title>
+</head>
+<body>
+<div id="div">
+    div
+</div>
+<script>
+    var div = document.getElementById("div");
+    var innerHTML=div.innerHTML;
+    //alert(innerHTML);
+    div.innerHTML="<input type='text'>";
+    // 追加一个文本框
+    div.innerHTML+="<input type='text'>";
+</script>
+</body>
+</html>
