@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象与JS对象的转换</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div id="div1">div1....</div>
+<div id="div2">div2....</div>
+<script>
+   //通过js来获取所有名称为div的HTML标签元素
+    var divs = document.getElementsByTagName("div");
+     alert(divs.length); //可以把divs看作数组
+   for (var i = 0; i <divs.length ; i++) {
+      // divs[i].innerHTML="aaa";
+      //  将js对象转成JQuery对象,并将div的内容改为ccc
+      // $(divs[i]).html("ccc");
+   }
+   //通过JQuery来获取div标签元素对象
+    var $divs = $("div");
+    alert($divs.length);//也可以当做数组使用
+   //对divs中所有的div 让其标签体内容变为"bbb"  使用jq方式
+  // $divs.html("bbb");
+   //  将JQuery对象转成jq对象,并将div的内容分别改为ddd和eee
+   $divs[0].innerHTML="ddd";
+   $divs.get(1).innerHTML="eee"
+    </script>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-package web;
+package web.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,17 +9,18 @@ import java.io.IOException;
 
 /**
  * @ Author     ：gaols
- * @ Date       ：Created in 15:25 2019/9/29
+ * @ Date       ：Created in 17:09 2019/10/12
  * @Version: $version$
  */
-@WebServlet("/user/updateServlet")
-public class UpdateServlet extends HttpServlet {
+@WebServlet(name = "/testServlet")
+public class TestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("updateServlet.....");
-        request.getRequestDispatcher("/index.jsp").forward(request,response);
+        String name = request.getParameter("name");
+        String msg = request.getParameter("msg");
+        System.out.println("name:"+name+"msg:"+msg);
     }
 }
