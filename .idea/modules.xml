@@ -10,9 +10,12 @@
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSP/JSP.iml" filepath="$PROJECT_DIR$/JSP/JSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoginDemo/LoginDemo.iml" filepath="$PROJECT_DIR$/LoginDemo/LoginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet/Servlet.iml" filepath="$PROJECT_DIR$/Servlet/Servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShowUserInfoList/ShowUserInfoList.iml" filepath="$PROJECT_DIR$/ShowUserInfoList/ShowUserInfoList.iml" />
       <module fileurl="file://$PROJECT_DIR$/XML/XML.iml" filepath="$PROJECT_DIR$/XML/XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven_mysql/maven_mysql.iml" filepath="$PROJECT_DIR$/../maven_mysql/maven_mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel/travel.iml" filepath="$PROJECT_DIR$/travel/travel.iml" />
     </modules>
   </component>
 </project>
